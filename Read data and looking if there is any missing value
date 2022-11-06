@@ -1,0 +1,11 @@
+# Read the Data
+gold_df.head()
+gold_df.tail()
+gold_df.info()
+
+# Using only Indonesian because that is what we looking for
+gold_df['Indonesia(IDR)'].head().reset_index()
+gold_df['Indonesia(IDR)'].tail().reset_index()
+
+# Looking for Missing Value
+gold_df.isnull().sum()
