@@ -1,0 +1,1 @@
+gold_df = pd.read_csv('...\Monthly_gold_price_1990-2021.csv')
