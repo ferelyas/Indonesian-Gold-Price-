@@ -1,0 +1,17 @@
+# Using line chart to see the Price 
+
+pio.templates.default = "plotly_dark"
+fig = px.line(gold_df, x = "Date", y = "Indonesia(IDR)", title = "Gold price in Indonesia")
+fig.show()
+
+# Using bar chart to see the Price in 1990
+
+pio.templates.default = "plotly_dark"
+fig = px.bar(gold_df[0:12], x = "Date", y = "Indonesia(IDR)",color='Date', title = "Gold price in Indonesia in 1990")
+fig.show()
+
+# Using bar chart to see the price in the last 10 Month
+
+pio.templates.default = "plotly_dark"
+fig = px.bar(gold_df[-12:], x = "Date", y = "Indonesia(IDR)",color='Date', title = "Gold price in Indonesia OCT 2020 - JUL 2021")
+fig.show()
